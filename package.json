@@ -1,11 +1,8 @@
 {
   "name": "val-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Utils for a lot of uses",
   "main": "src/index.js",
-  "scripts": {
-    "build": "gulp"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lavesan/val-utils.git"
