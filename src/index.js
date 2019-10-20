@@ -4,13 +4,13 @@
  * @returns Object with snake case key names
  */
 const camelToSnakeCase = function(object) {
-    keys = Object.keys(object);
+    entries = Object.entries(object);
     let obj = {};
-    keys.forEach(key => {
+    entries.forEach(([key, value]) => {
         const snakeKey = key.replace(/[A-Z]/g, function(match) {
             return `_${match.toLowerCase()}`
         });
-        obj[snakeKey] = object[key];
+        obj[snakeKey] = value;
     });
     return obj;
 }
@@ -21,13 +21,13 @@ const camelToSnakeCase = function(object) {
  * @returns Object with camel case key names
  */
 const snakeToCamelCase = function(object) {
-    entries = Object.keys(object);
+    entries = Object.entries(object);
     let obj = {};
-    entries.forEach(key => {
+    entries.forEach(([key, value]) => {
         const camelKey = key.replace(/_./g, function(match) { 
             return match.replace(/_/g, '').toUpperCase(); 
         });
-        obj[camelKey] = object[key];
+        obj[camelKey] = value;
     });
     return obj;
 }
