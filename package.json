@@ -1,0 +1,23 @@
+{
+  "name": "val-utils",
+  "version": "1.0.0",
+  "description": "Utils for a lot of uses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavesan/val-utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "utils"
+  ],
+  "author": "Valdery Alves Paes Júnior <http://valderyalves.com> (valdery.jur@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lavesan/val-utils/issues"
+  },
+  "homepage": "https://github.com/lavesan/val-utils#readme"
+}
