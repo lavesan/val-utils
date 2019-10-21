@@ -4,6 +4,20 @@ I created this utils repo to make functions/consts that helps developers like me
 
 If you have some troubles's idea, feel free to talk to me or make a fork with a pull request with a solution on my repo!
 
+## Using
+
+Just install this library from npm
+
+```bash
+npm i --save val-utils
+```
+
+and then import the function you want:
+
+```javascript
+import { camelToSnakeCase } from 'val-utils';
+```
+
 ## Functions
 
 ### camelToSnakeCase
