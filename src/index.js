@@ -4,7 +4,7 @@
  * @returns Object with snake case key names
  */
 const camelToSnakeCase = function(object) {
-    entries = Object.entries(object);
+    const entries = Object.entries(object);
     let obj = {};
     entries.forEach(([key, value]) => {
         const snakeKey = key.replace(/[A-Z]/g, function(match) {
@@ -21,7 +21,7 @@ const camelToSnakeCase = function(object) {
  * @returns Object with camel case key names
  */
 const snakeToCamelCase = function(object) {
-    entries = Object.entries(object);
+    const entries = Object.entries(object);
     let obj = {};
     entries.forEach(([key, value]) => {
         const camelKey = key.replace(/_./g, function(match) { 

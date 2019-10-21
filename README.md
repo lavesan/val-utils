@@ -60,6 +60,6 @@ console.log(snakeToCamelCase(snakeCaseObject));
  *   userId: 1,
  *   userEmail: 'email@gmail.com',
  *   userPassword: 'rds@%%$#$das!',
- * };
+ * }
  * /
 ```

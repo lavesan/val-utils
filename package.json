@@ -1,8 +1,11 @@
 {
   "name": "val-utils",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Utils for a lot of uses",
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "gulp app.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lavesan/val-utils.git"
@@ -17,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/lavesan/val-utils/issues"
   },
-  "homepage": "https://github.com/lavesan/val-utils#readme"
+  "homepage": "https://github.com/lavesan/val-utils#readme",
+  "prepublish": "npm run build",
+  "devDependencies": {
+    "babel-core": "~6.26.3",
+    "babel-preset-env": "~1.7.0",
+    "gulp": "~4.0.2",
+    "gulp-babel": "~7.0.1",
+    "gulp-concat": "~2.6.1",
+    "gulp-uglify": "~3.0.2"
+  }
 }
