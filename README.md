@@ -37,7 +37,7 @@ console.log(camelToSnakeCase(camelCaseObject));
  * {
  *      user_id: 1,
  *      user_email: 'email@gmail.com',
- *      userPassword: 'rds@%%$#$das!',
+ *      user_password: 'rds@%%$#$das!',
  * }
  * /
 ```
@@ -50,7 +50,7 @@ Transform the key names of a object from snake case to camel case
 const snakeCaseObject = {
     user_id: 1,
     user_email: 'email@gmail.com',
-    userPassword: 'rds@%%$#$das!',
+    user_password: 'rds@%%$#$das!',
 };
 
 console.log(snakeToCamelCase(snakeCaseObject));
