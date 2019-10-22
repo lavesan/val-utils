@@ -24,11 +24,18 @@ import { camelToSnakeCase } from 'val-utils';
 
 Transforms the key names of a object from camel case to snake case
 
+Example:
+
 ```javascript
 const camelCaseObject = {
     userId: 1,
     userEmail: 'email@gmail.com',
     userPassword: 'rds@%%$#$das!',
+    userData: {
+        userAccount: 1234,
+        userDv: 1,
+        userAgency: 123,
+    }
 };
 
 console.log(camelToSnakeCase(camelCaseObject));
@@ -38,6 +45,11 @@ console.log(camelToSnakeCase(camelCaseObject));
  *      user_id: 1,
  *      user_email: 'email@gmail.com',
  *      user_password: 'rds@%%$#$das!',
+ *      user_data: {
+ *          user_account: 1234,
+ *          user_dv: 1,
+ *          user_agency: 123,
+ *      }
  * }
  * /
 ```
@@ -46,11 +58,18 @@ console.log(camelToSnakeCase(camelCaseObject));
 
 Transform the key names of a object from snake case to camel case
 
+Example:
+
 ```javascript
 const snakeCaseObject = {
     user_id: 1,
     user_email: 'email@gmail.com',
     user_password: 'rds@%%$#$das!',
+    user_data: {
+        user_account: 1234,
+        user_dv: 1,
+        user_agency: 123,
+    }
 };
 
 console.log(snakeToCamelCase(snakeCaseObject));
@@ -60,6 +79,11 @@ console.log(snakeToCamelCase(snakeCaseObject));
  *   userId: 1,
  *   userEmail: 'email@gmail.com',
  *   userPassword: 'rds@%%$#$das!',
+ *   userData: {
+ *       userAccount: 1234,
+ *       userDv: 1,
+ *       userAgency: 123,
+ *   }
  * }
  * /
 ```
