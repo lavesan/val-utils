@@ -1,6 +1,6 @@
 {
   "name": "val-utils",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Utils for a lot of uses",
   "main": "dist/index.js",
   "scripts": {
