@@ -1,6 +1,6 @@
 /**
  * @description Receives an object with camel case key names
- * @param { [key: string]: any } object 
+ * @param {{ [key: string]: any }} object 
  * @returns Object with snake case key names
  */
 const camelToSnakeCase = function(object) {
@@ -24,7 +24,7 @@ const camelToSnakeCase = function(object) {
 
 /**
  * @description Receives a object with snake case key names
- * @param { [key: string]: any } object
+ * @param {{ [key: string]: any }} object
  * @returns Object with camel case key names
  */
 const snakeToCamelCase = function(object) {
